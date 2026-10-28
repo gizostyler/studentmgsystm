@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Student Grade Calculator</h1>
+        <p>Calculate your grades and scholarship eligibility</p>
+
+        <form id="studentForm">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <label for="math">Mathematics (0–100)</label>
+            <input type="number" id="math" min="0" max="100">
+
+            <label for="english">English (0–100)</label>
+            <input type="number" id="english" min="0" max="100">
+
+            <label for="science">Science (0–100)</label>
+            <input type="number" id="science" min="0" max="100">
+
+            <label for="attendance">Attendance (0–100%)</label>
+            <input type="number" id="attendance" min="0" max="100">
+
+            <label for="activity">Extra-curricular Activity</label>
+            <select id="activity">
+                <option value="None">None</option>
+                <option value="Sports">Sports</option>
+                <option value="Music-Arts">Music-Arts</option>
+                <option value="Debate-Quiz">Debate-Quiz</option>
+                <option value="Volunteering">Volunteering</option>
+            </select>
+
+            <button type="submit">Calculate Results</button>
+            <button type="reset" class="clear">Clear</button>
+        </form>
+
+        <div id="error" role="alert"></div>
+        <div id="results" aria-live="polite" hidden>
+            <h2>Student Results</h2>
+            <p id="studentResult"></p>
+            <p id="totalResult"></p>
+            <p id="percentageResult"></p>
+            <p id="gradeResult"></p>
+            <p id="statusResult"></p>
+            <p id="scholarshipResult"></p>
+            <p id="remarkResult"></p>
+            <p id="activityResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+            
+</body>
+</html>

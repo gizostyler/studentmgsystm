@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+h1 {
+    color: #4338ca;
+    text-align: center;
+    font-size: 27px;
+}
+
+.container > p {
+    text-align: center;
+    color: #64748b;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #4338ca;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.clear {
+    margin-top: 8px;
+    background: #64748b;
+}
+
+#results {
+    margin-top: 25px;
+    padding: 18px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#results h2 {
+    color: #4338ca;
+}
+
+#results p {
+    line-height: 1.5;
+}
+
+#error {
+    margin-top: 12px;
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
